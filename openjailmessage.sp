@@ -14,7 +14,7 @@ public Plugin myinfo =
 	author = "azalty/rlevet",
 	description = "Sends a message in the chat saying who opened jails",
 	version = "1.0.0",
-	url = "TheWalkingJail https://discord.gg/Q7b57yk & http://rp.team-magnetik.fr"
+	url = "TheWalkingJail https://discord.gg/Q7b57yk"
 };
 
 public void OnPluginStart()
