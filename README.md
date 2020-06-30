@@ -10,7 +10,8 @@ Liste des choses à modifier :
 - Ligne 112 : Ajoutez chaque map et son bouton (de nouveau)
 
 ### J'ai besoin d'aide :O
-Désolé, je ne peux pas vraiment fournir de l'aide. Vous devez avoir quelques connaissances en SourcePawn pour comprendre le code et le modifier. Le code n'a pas été pensé pour être donné à tout le monde, mais j'ai décidé de le donner.
+Désolé, je ne peux pas vraiment fournir de l'aide. Vous devez avoir quelques connaissances en SourcePawn pour comprendre le code et le modifier. Le code n'a pas été pensé pour être donné à tout le monde, mais j'ai décidé de le donner._
+Support dispo sur discord: https://discord.gg/Sr33BEH
 
 ### Plugins nécéssaires ?
 Vous devez avoir l'include [colorvariables.inc](https://forums.alliedmods.net/showthread.php?t=267743) (placez-le dans addons/sourcemod/scripting/include)
