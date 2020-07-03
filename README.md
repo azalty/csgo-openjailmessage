@@ -16,4 +16,5 @@ Support dispo sur discord: https://discord.gg/Sr33BEH
 Vous avez trouvé un bug ? Signalez-le sur le discord support ou dans les [Issues de ce repo](https://github.com/rlevet/csgo-openjailmessage/issues), merci !
 
 ### Plugins nécéssaires ?
-Vous devez avoir l'include [colorvariables.inc](https://forums.alliedmods.net/showthread.php?t=267743) (placez-le dans addons/sourcemod/scripting/include)
+Vous devez avoir l'include [colorvariables.inc](https://forums.alliedmods.net/showthread.php?t=267743) (placez-le dans addons/sourcemod/scripting/include)\
+Compilé avec Sourcemod 1.10 (Stable)
