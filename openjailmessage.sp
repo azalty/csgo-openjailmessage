@@ -13,7 +13,7 @@ public Plugin myinfo =
 	name = "OpenJailMessage",
 	author = "azalty/rlevet",
 	description = "Sends a message in the chat saying who opened jails",
-	version = "1.0.0",
+	version = "1.0.2",
 	url = "TheWalkingJail https://discord.gg/Q7b57yk"
 };
 
@@ -21,6 +21,7 @@ public void OnPluginStart()
 {
 	HookEntityOutput("func_button", "OnPressed", Button_Pressed);
 	HookEvent("round_start", OnRoundStart);
+	HookEvent("round_end", OnRoundEnd);
 	
 	JailAlreadyOpen = false;
 }
@@ -79,6 +80,18 @@ public Action AutoOpenJail(Handle timer)
 				break;
 			}
 			else if (StrEqual(CurrentMap, "jb_moonjail_v2", true))
+			{
+				break;
+			}
+			else if (StrEqual(CurrentMap, "jb_spy_vs_spy_beta7", true))
+			{
+				break;
+			}
+			else if (StrEqual(CurrentMap, "ba_jail_reloaded", true))
+			{
+				break;
+			}
+			else if (StrEqual(CurrentMap, "jb_chicken_island", true))
 			{
 				break;
 			}
@@ -147,6 +160,34 @@ public void Button_Pressed(const char[] output, int caller, int activator, float
 	else if (StrEqual(CurrentMap, "jb_moonjail_v2", true))
 	{
 		if (!StrEqual(entity, "jails", true))
+		{
+			return;
+		}
+	}
+	else if (StrEqual(CurrentMap, "jb_cavern_v1b", true))
+	{
+		if (caller != 493)
+		{
+			return;
+		}
+	}
+	else if (StrEqual(CurrentMap, "jb_spy_vs_spy_beta7", true))
+	{
+		if (!StrEqual(entity, "cell_button", true))
+		{
+			return;
+		}
+	}
+	else if (StrEqual(CurrentMap, "ba_jail_reloaded", true))
+	{
+		if (!StrEqual(entity, "open_jail", true))
+		{
+			return;
+		}
+	}
+	else if (StrEqual(CurrentMap, "jb_chicken_island", true))
+	{
+		if (!StrEqual(entity, "jail_open_button", true))
 		{
 			return;
 		}
