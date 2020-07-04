@@ -13,7 +13,7 @@ public Plugin myinfo =
 	name = "OpenJailMessage",
 	author = "azalty/rlevet",
 	description = "Sends a message in the chat saying who opened jails",
-	version = "1.0.2",
+	version = "1.0.3",
 	url = "TheWalkingJail https://discord.gg/Q7b57yk"
 };
 
@@ -80,6 +80,10 @@ public Action AutoOpenJail(Handle timer)
 				break;
 			}
 			else if (StrEqual(CurrentMap, "jb_moonjail_v2", true))
+			{
+				break;
+			}
+			else if (StrEqual(CurrentMap, "jb_cavern_v1b", true))
 			{
 				break;
 			}
