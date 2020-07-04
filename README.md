@@ -18,3 +18,6 @@ Vous avez trouvé un bug ? Signalez-le sur le discord support ou dans les [Issue
 ### Plugins nécéssaires ?
 Vous devez avoir l'include [colorvariables.inc](https://forums.alliedmods.net/showthread.php?t=267743) (placez-le dans addons/sourcemod/scripting/include)\
 Compilé avec Sourcemod 1.10 (Stable)
+
+### Dois-je compiler le plugin?
+Oui, si vous comptez ajouter des maps ou modifier les valeurs. Pour ceux voulant tester si le plugin fonction, une version compilée (.smx) sera toujours disponible avec la dernière version du fichier .sp
