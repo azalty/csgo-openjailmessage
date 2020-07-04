@@ -21,3 +21,7 @@ Compilé avec Sourcemod 1.10 (Stable)
 
 ### Dois-je compiler le plugin?
 Oui, si vous comptez ajouter des maps ou modifier les valeurs. Pour ceux voulant tester si le plugin fonction, une version compilée (.smx) sera toujours disponible avec la dernière version du fichier .sp
+
+### Auteur ?
+Merci de me laisser comme auteur, ou d'ajouter votre nom après le mien si vous souhaitez modifier le plugin. Soyons honnêtes, je ne vérifierai pas, mais pourquoi cacher la source ?\
+Amusez-vous bien !
