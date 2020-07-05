@@ -13,7 +13,7 @@ public Plugin myinfo =
 	name = "OpenJailMessage",
 	author = "azalty/rlevet",
 	description = "Sends a message in the chat saying who opened jails",
-	version = "1.0.4",
+	version = "1.0.5",
 	url = "TheWalkingJail https://discord.gg/Q7b57yk"
 };
 
@@ -59,7 +59,7 @@ public Action AutoOpenJail(Handle timer)
 		{
 			GetEntPropString(index, Prop_Data, "m_iName", entityname, sizeof(entityname));
 			
-			if (StrContains(CurrentMap, "ba_jail_minecraftparty_v6", true))
+			if (StrContains(CurrentMap, "ba_jail_minecraftparty_v6", true) != -1)
 			{
 				if (StrEqual(entityname, "knopf_jail_green", true))
 				{
@@ -67,35 +67,35 @@ public Action AutoOpenJail(Handle timer)
 					break;
 				}
 			}
-			else if (StrContains(CurrentMap, "jb_clouds_beta02", true))
+			else if (StrContains(CurrentMap, "jb_clouds_beta02", true) != -1)
 			{
 				break;
 			}
-			else if (StrContains(CurrentMap, "jb_undertale_v1e", true))
+			else if (StrContains(CurrentMap, "jb_undertale_v1e", true) != -1)
 			{
 				break;
 			}
-			else if (StrContains(CurrentMap, "ba_jail_umbrella", true))
+			else if (StrContains(CurrentMap, "ba_jail_umbrella", true) != -1)
 			{
 				break;
 			}
-			else if (StrContains(CurrentMap, "jb_moonjail_v2", true))
+			else if (StrContains(CurrentMap, "jb_moonjail_v2", true) != -1)
 			{
 				break;
 			}
-			else if (StrContains(CurrentMap, "jb_cavern_v1b", true))
+			else if (StrContains(CurrentMap, "jb_cavern_v1b", true) != -1)
 			{
 				break;
 			}
-			else if (StrContains(CurrentMap, "jb_spy_vs_spy_beta7", true))
+			else if (StrContains(CurrentMap, "jb_spy_vs_spy_beta7", true) != -1)
 			{
 				break;
 			}
-			else if (StrContains(CurrentMap, "ba_jail_reloaded", true))
+			else if (StrContains(CurrentMap, "ba_jail_reloaded", true) != -1)
 			{
 				break;
 			}
-			else if (StrContains(CurrentMap, "jb_chicken_island", true))
+			else if (StrContains(CurrentMap, "jb_chicken_island", true) != -1)
 			{
 				break;
 			}
@@ -126,77 +126,77 @@ public void Button_Pressed(const char[] output, int caller, int activator, float
 	GetCurrentMap(CurrentMap, 256);
 
 	// manually enter map name and button name here
-	if (StrContains(CurrentMap, "jb_dystopian_b6", true))
+	if (StrContains(CurrentMap, "jb_dystopian_b6", true) != -1)
 	{
 		if (!StrEqual(entity, "yard_game_but_man", true))
 		{
 			return;
 		}
 	}
-	else if (StrContains(CurrentMap, "ba_jail_minecraftparty_v6", true))
+	else if (StrContains(CurrentMap, "ba_jail_minecraftparty_v6", true) != -1)
 	{
 		if (!StrEqual(entity, "knopf_jail_green", true))
 		{
 			return;
 		}
 	}
-	else if (StrContains(CurrentMap, "jb_clouds_beta02", true))
+	else if (StrContains(CurrentMap, "jb_clouds_beta02", true) != -1)
 	{
 		if (!StrEqual(entity, "zelle_button", true))
 		{
 			return;
 		}
 	}
-	else if (StrContains(CurrentMap, "jb_undertale_v1e", true))
+	else if (StrContains(CurrentMap, "jb_undertale_v1e", true) != -1)
 	{
 		if (!StrEqual(entity, "celldoors", true))
 		{
 			return;
 		}
 	}
-	else if (StrContains(CurrentMap, "ba_jail_umbrella", true))
+	else if (StrContains(CurrentMap, "ba_jail_umbrella", true) != -1)
 	{
 		if (!StrEqual(entity, "button_jails", true))
 		{
 			return;
 		}
 	}
-	else if (StrContains(CurrentMap, "jb_moonjail_v2", true))
+	else if (StrContains(CurrentMap, "jb_moonjail_v2", true) != -1)
 	{
 		if (!StrEqual(entity, "jails", true))
 		{
 			return;
 		}
 	}
-	else if (StrContains(CurrentMap, "jb_cavern_v1b", true))
+	else if (StrContains(CurrentMap, "jb_cavern_v1b", true) != -1)
 	{
 		if (caller != 493)
 		{
 			return;
 		}
 	}
-	else if (StrContains(CurrentMap, "jb_spy_vs_spy_beta7", true))
+	else if (StrContains(CurrentMap, "jb_spy_vs_spy_beta7", true) != -1)
 	{
 		if (!StrEqual(entity, "cell_button", true))
 		{
 			return;
 		}
 	}
-	else if (StrContains(CurrentMap, "ba_jail_reloaded", true))
+	else if (StrContains(CurrentMap, "ba_jail_reloaded", true) != -1)
 	{
 		if (!StrEqual(entity, "open_jail", true))
 		{
 			return;
 		}
 	}
-	else if (StrContains(CurrentMap, "jb_chicken_island", true))
+	else if (StrContains(CurrentMap, "jb_chicken_island", true) != -1)
 	{
 		if (!StrEqual(entity, "jail_open_button", true))
 		{
 			return;
 		}
 	}
-	else if (StrContains(CurrentMap, "map_name", true))
+	else if (StrContains(CurrentMap, "map_name", true) != -1)
 	{
 		if (!StrEqual(entity, "button_name", true))
 		{
