@@ -11,7 +11,7 @@ Liste des choses à modifier :
 
 ### Comment trouver le nom/l'ID des boutons ?
 Utilisez [Button Watcher](https://forums.alliedmods.net/showthread.php?t=274741) (output console conseillé)\
-Exemple: [BW] plaer pressed button 14 jail_button\
+Exemple: [BW] player pressed button 14 jail_button\
 '14' est l'ID du bouton et 'jail_button' est le nom du bouton. Il se peut que le bouton n'ait pas de nom, utilisez l'ID dans ce cas.
 
 ### J'ai besoin d'aide :O
