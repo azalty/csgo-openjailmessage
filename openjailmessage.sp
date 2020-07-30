@@ -13,7 +13,7 @@ public Plugin myinfo =
 	name = "OpenJailMessage",
 	author = "azalty/rlevet",
 	description = "Sends a message in the chat saying who opened jails",
-	version = "1.0.5",
+	version = "1.0.6",
 	url = "TheWalkingJail https://discord.gg/Q7b57yk"
 };
 
@@ -26,13 +26,18 @@ public void OnPluginStart()
 	JailAlreadyOpen = false;
 }
 
+public void OnMapStart()
+{
+	delete AutoOpenJailTimer;
+}
+
 public void OnRoundStart(Handle event, const char[] name, bool dontBroadcast)
 {
 	JailAlreadyOpen = false;
 	
 	if (GameRules_GetProp("m_bWarmupPeriod") == 0)
 	{
-		AutoOpenJailTimer = CreateTimer(60.0, AutoOpenJail, _, TIMER_FLAG_NO_MAPCHANGE);
+		AutoOpenJailTimer = CreateTimer(60.0, AutoOpenJail);
 	}
 }
 
@@ -102,7 +107,7 @@ public Action AutoOpenJail(Handle timer)
 			else
 			{
 				// don't say that jails weren't opened in time because map isn't setup yet, so we can't really know
-				AutoOpenJailTimer = INVALID_HANDLE;
+				AutoOpenJailTimer = null;
 				return;
 			}
 		}
@@ -110,7 +115,7 @@ public Action AutoOpenJail(Handle timer)
 		CPrintToChatAll("{green}[Jails] {default}Les jails {red}n'ont pas été ouvertes à temps {default}-> {green}Quartier Libre !");
 	}
 	
-	AutoOpenJailTimer = INVALID_HANDLE;
+	AutoOpenJailTimer = null;
 }
 
 public void Button_Pressed(const char[] output, int caller, int activator, float delay)
