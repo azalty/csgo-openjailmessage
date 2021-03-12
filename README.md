@@ -1,6 +1,13 @@
 # csgo-openjailmessage
 A plugin for french jailbreak/ba jail servers that writes on the chat who opened jails, and also auto opens after some time
 
+### Warning!
+This plugin isn't really supported or well made either. The documentation is only made in french.
+You'll need to have a little knowledge about coding and sourcemod basics.
+I could do a better version but as of now I have very little interest and I think there are already better alternatives.
+
+If you still need some help, I might help though. Please create an [Issue](https://github.com/azalty/csgo-openjailmessage/issues)
+
 ### Comment ça marche ?
 Vous devez modifier puis compiler le fichier .sp (avec spcomp.exe ou compile.exe)
 
